@@ -1,21 +1,27 @@
 import { Header } from "@/components/header";
+import Propertie from "@/components/propertie";
 import { api } from "@/lib/axios";
 
 interface HomeProps {
-  properties: {
+  properties: Array<{
     id: number
     img_url: string
     title: string
     description: string
     characteristics: Array<string>
     price: number
-  }
+  }>
 }
 
 export default function Home({properties}: HomeProps) {
   return (
     <>
       <Header />
+      <div className="flex flex-wrap gap-4 mt-8 mx-auto max-w-[80%]">
+        {properties.map(propertie => (
+          <Propertie key={propertie.id} {...propertie} />
+        ))}
+      </div>
     </>
   );
 }

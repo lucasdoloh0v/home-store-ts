@@ -9,9 +9,9 @@ import {
 function OrderFilter() {
   return (
     <div className='flex items-center gap-1'>
-    <p className="hidden md:block text-lg font-medium">Ordenar por</p>
+    <p className="hidden sm:block text-lg font-medium">Ordenar por</p>
     <Select defaultValue='default'>
-      <SelectTrigger className='md:w-[180px]'>
+      <SelectTrigger className='sm:w-[180px]'>
         <SelectValue />
       </SelectTrigger>
       <SelectContent>
