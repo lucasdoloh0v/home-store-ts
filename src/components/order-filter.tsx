@@ -5,12 +5,18 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import { OrderState } from '@/pages';
+import { Dispatch, SetStateAction } from 'react';
 
-function OrderFilter() {
+interface OrderFilterProps {
+  setOrder: Dispatch<SetStateAction<OrderState>>
+}
+
+function OrderFilter({setOrder}: OrderFilterProps) {
   return (
     <div className='flex items-center gap-1'>
     <p className="hidden sm:block text-lg font-medium">Ordenar por</p>
-    <Select defaultValue='default'>
+    <Select defaultValue='default' onValueChange={(value: OrderState) => setOrder(value)}>
       <SelectTrigger className='sm:w-[180px]'>
         <SelectValue />
       </SelectTrigger>

@@ -1,6 +1,7 @@
 import { Header } from "@/components/header";
 import Propertie from "@/components/propertie";
 import { api } from "@/lib/axios";
+import { createContext, ReactNode, useEffect, useState } from "react";
 
 interface HomeProps {
   properties: Array<{
@@ -13,12 +14,38 @@ interface HomeProps {
   }>
 }
 
+export type OrderState = 'default' | 'higher' | 'lower'
+
 export default function Home({properties}: HomeProps) {
+  const [ordenatedProperties, setOrdenatedProperties] = useState(properties);
+  const [order, setOrder] = useState<OrderState>('default');
+
+  useEffect(() => {
+    console.log('aqui', properties);
+    switch (order) {
+      case 'lower':
+        const ordenatedPropertiesGrowing = [...properties].sort(
+          (propertieA, propertieB) => propertieA.price - propertieB.price
+        );
+        setOrdenatedProperties([...ordenatedPropertiesGrowing]);
+        break;
+      case 'higher':
+        const ordenatedPropertiesDescending = [...properties].sort(
+          (propertieA, propertieB) => propertieB.price - propertieA.price
+        );
+        setOrdenatedProperties([...ordenatedPropertiesDescending]);
+        break;
+      case "default":
+        setOrdenatedProperties([...properties])
+        break;  
+    }
+  }, [order, properties]);
+  
   return (
     <>
-      <Header />
+      <Header setOrder={setOrder} />
       <div className="flex flex-wrap gap-4 mt-8 mx-auto max-w-[80%]">
-        {properties.map(propertie => (
+        {ordenatedProperties.map(propertie => (
           <Propertie key={propertie.id} {...propertie} />
         ))}
       </div>

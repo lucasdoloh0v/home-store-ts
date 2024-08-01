@@ -33,7 +33,7 @@ function Propertie({
 }: PropertieProps) {
   return (
     <Dialog>
-      <DialogTrigger className='min-w-64 max-w-96'>
+      <DialogTrigger className='flex-1 min-w-64 max-w-96 sm:min-w-96 sm:w-full sm:flex-initial'>
         <Card className='w-full'>
           <CardHeader>
             <CardTitle className='text-lg'>{title}</CardTitle>
