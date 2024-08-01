@@ -1,0 +1,28 @@
+{
+  "properties": [
+    {
+      "id": 0,
+      "title": "Apartemento em Santos",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet sapien quis ligula consequat tempor sed ut lorem. Proin vehicula magna id blandit sollicitudin. Nullam vitae convallis nulla. Sed malesuada egestas tellus vel ullamcorper. Donec finibus lacus id mauris feugiat, sit amet auctor leo tristique. Morbi est massa, iaculis sed ipsum luctus, ultrices porttitor urna. Nullam nec auctor dui. In elementum luctus ex, in vulputate leo porttitor a.",
+      "characteristics": ["2 dormitórios sendo 1 suite", "lavabo", "2 vagas de garagem"],
+      "price": 380000,
+      "img_url": "https://images.unsplash.com/photo-1492659991124-ba70990ba2f4?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 1,
+      "title": "Apartemento em Santos",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet sapien quis ligula consequat tempor sed ut lorem. Proin vehicula magna id blandit sollicitudin. Nullam vitae convallis nulla. Sed malesuada egestas tellus vel ullamcorper. Donec finibus lacus id mauris feugiat, sit amet auctor leo tristique. Morbi est massa, iaculis sed ipsum luctus, ultrices porttitor urna. Nullam nec auctor dui. In elementum luctus ex, in vulputate leo porttitor a.",
+      "characteristics": ["3 dormitórios sendo 1 suite", "lavabo", "2 vagas de garagem"],
+      "price": 420000,
+      "img_url": "https://images.unsplash.com/photo-1492659991124-ba70990ba2f4?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 2,
+      "title": "Casa em Santos",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet sapien quis ligula consequat tempor sed ut lorem. Proin vehicula magna id blandit sollicitudin. Nullam vitae convallis nulla. Sed malesuada egestas tellus vel ullamcorper. Donec finibus lacus id mauris feugiat, sit amet auctor leo tristique. Morbi est massa, iaculis sed ipsum luctus, ultrices porttitor urna. Nullam nec auctor dui. In elementum luctus ex, in vulputate leo porttitor a.",
+      "characteristics": ["2 dormitórios", "lavabo", "1 vagas de garagem"],
+      "price": 340000,
+      "img_url": "https://images.unsplash.com/photo-1492659991124-ba70990ba2f4?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ]
+}

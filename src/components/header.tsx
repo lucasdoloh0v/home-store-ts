@@ -1,0 +1,14 @@
+import OrderFilter from './order-filter';
+import { ThemeToggle } from './theme-toggle';
+
+export function Header() {
+  return (
+    <div className='p-3 border-b w-full flex justify-between items-center'>
+      <h1 className='font-bold text-xl md:text-2xl'>Home store</h1>
+      <div className='flex items-center gap-2'>
+        <OrderFilter />
+        <ThemeToggle />
+      </div>
+    </div>
+  );
+}
